@@ -7,7 +7,9 @@ function openModule(val) {
 //toggle single class like hide and show by single id -> custom your own-css
 function hideShowSingle(val) {
   const showModel1 = document.getElementById(val);
-  showModel1.classList.toggle(val);
+  // showModel1.classList.toggle(val);
+  console.log("first")
+
 }
 
 //toggle multiple class data -> custom your own-css

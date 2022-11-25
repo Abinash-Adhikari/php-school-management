@@ -71,6 +71,10 @@ a {
   background-color: var(--third-color);
   color: white;
 }
+.nav-active{
+  background-color: var(--third-color);
+  color: white;
+}
 /* .a-btn:hover {
   background-color: var(--third-color);
 } */
@@ -83,7 +87,7 @@ a {
   position: relative;
 }
 .top-header {
-  height: 5rem;
+  height: 3.5rem;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -97,6 +101,7 @@ a {
 }
 .hide {
   display: none;
+  transition: 1s;
 }
 
 .nav-logo img {
@@ -105,10 +110,11 @@ a {
   border-radius: 50%;
 }
 .responsive .left-part {
-  width: 5%;
+  width: 7%;
+  transition: 1s;
 }
 .responsive .right-part {
-  width: 95%;
+  width: 93%;
 }
 .reduceWidth img {
   width: 4rem;
@@ -124,7 +130,7 @@ a {
   gap: 2rem;
 }
 .userIcon-notification i {
-  font-size: 1.3rem;
+  font-size: 1rem;
   /* margin-right: 1rem; */
 }
 
@@ -194,3 +200,4 @@ a {
   top: 0;
   background-color: var(--third-color);
 }
+
