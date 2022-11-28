@@ -1,5 +1,4 @@
 <?php
-
     if(isset($_GET['module'])){
         $module=$_GET['module'];
         $createFile='';
@@ -26,19 +25,20 @@
 <?php
     $topbar="./includes/topbar/topbar.php";
     include($topbar);
-    if (!file_exists($folder)){
+
+    if (isset($folder) && !file_exists($folder)){
         mkdir($folder, 0777);
     }
-    if(!file_exists($include)){
+    if(isset($include) && !file_exists($include)){
         touch($include);
     }
-    if(!file_exists($folder.'/operation')){
+    if(isset($folder) && !file_exists($folder.'/operation')){
         mkdir($folder.'/operation', 0777);
     }
-    if(!file_exists($operation)){
+    if(isset($operation) && !file_exists($operation)){
         touch($operation);
     }
-    include($include);
+    if(isset($include)) include($include);
     
     ?>
     </div>
