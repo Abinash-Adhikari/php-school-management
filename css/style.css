@@ -2,6 +2,7 @@
   --first-color: #55c78c;
   --second-color: #00cbff;
   --third-color: #ff6972;
+  --background: #e4e9ff;
 }
 .color-first {
   color: var(--first-color);
@@ -26,7 +27,7 @@
   width: 100%;
 } */
 body {
-  background-color: #e4e9ff;
+  background-color: var(--third-color);
   overflow: hidden;
 }
 .login-wrapper {
@@ -55,7 +56,6 @@ a {
 .bg-sec {
   background-color: #cccc;
 }
-
 .nav-links-btn {
   display: flex;
   gap: 1rem;
@@ -71,7 +71,7 @@ a {
   background-color: var(--third-color);
   color: white;
 }
-.nav-active{
+.nav-active {
   background-color: var(--third-color);
   color: white;
 }
@@ -200,4 +200,3 @@ a {
   top: 0;
   background-color: var(--third-color);
 }
-

@@ -21,7 +21,7 @@
             include('navbar_variables.php');
             foreach($nav_Menus as $index => $nav_menu){
                 if(in_array($index,array_keys($sub_nav_menus))){
-                    if($index==$module){
+                    if(isset($_GET['module']) && $index==$module){
                         $module_active="nav-active";
                     }else{
                         $module_active='';
@@ -34,37 +34,38 @@
                             <div class="nav-buttons hide-show"><?php echo $nav_menu ?></div>
                         </div>  
                     </a>
-                    <div class="d-none1" id="sub-nav-<?php echo $index ?>">
-                    <?php
-                        foreach($sub_nav_menus[$index] as $index1 => $data){
-                            if($index1==$page){
-                                $active="nav-active";
-                            }else{
-                                $active='';
-                            }
-                    ?>
-                    <a href="showPage.php?module=<?php echo $index ?>&page=<?php echo $index1  ?>" >
-                        <div class="nav-links-btn icon-toggle <?php echo $active ?>">
-                            <div class="sub-nav-button">
-                                <?php echo $data ?>
+                    <div class="show-hide" id="sub-nav-<?php echo $index ?>">
+                        <?php
+                            foreach($sub_nav_menus[$index] as $index1 => $data){
+                                if(isset($page) &&$index1==$page){
+                                    $active="nav-active";
+                                }else{
+                                    $active='';
+                                }
+                        ?>
+                        <a href="showPage.php?module=<?php echo $index ?>&page=<?php echo $index1  ?>" >
+                            <div class="nav-links-btn icon-toggle <?php echo $active ?>">
+                                <div class="icons class-sub-icon"><i class="fa-solid fa-angles-right"></i></div>
+
+                                <div class="sub-nav-button">
+                                    <?php echo $data ?>
+                                </div>
                             </div>
-                            <div class="icons class-sub-icon"><i class="fa-solid fa-angles-right"></i></div>
-                        </div>
-                    </a>
-                    <?php
-                        }
-                    ?>
+                        </a>
+                        <?php
+                            }
+                        ?>
                     </div>
                 </div>
         <?php
             }else{
-                if($index==$module){
+                if(isset($_GET['module']) && $index==$module){
                     $module_active="nav-active";
                 }else{
                     $module_active='';
                 }
     ?>
-                <div class="wapper">
+                <div class="wrapper">
                     <a href="showPage.php?module=<?php echo $index ?>" id="active-<?php echo $index ?>" onclick="hideShowSingle('sub-nav-<?php echo $index ?>')">
                         <div class="nav-links-btn <?php echo $module_active ?>">
                             <div class="icons icon-toggle"> <i class="<?php echo $nav_icons[$index] ?>"></i></div>
@@ -79,8 +80,8 @@
         </div>
     </div>
     
-<script>
+<!-- <script>
     function hideShowSingle(id){
         document.getElementById(id).classList.toggle('d-none');
     }
-</script>
+</script> -->
