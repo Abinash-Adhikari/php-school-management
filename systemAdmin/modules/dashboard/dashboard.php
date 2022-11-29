@@ -1,13 +1,13 @@
 <div class="scroll page-header p-3">
     <div class="content-header">
         <div class="container-fluid">
-            <div class="row mb-2">
+            <div class="row mb-2 justify-content-between">
               <div class="col-sm-6">
                 <h2 class="m-0">Dashboard </h2>
               </div>
               <!-- /.col -->
-              <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
+              <div class="col-sm-3">
+                <ol class="breadcrumb float-sm-right bg-color-background">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item active">Dashboard</li>
                 </ol>
@@ -25,32 +25,34 @@
               <div class="col-lg-3 col-6">
                 <!-- small box -->
                 <div class="small-box bg-info " style="border-radius:10px;">
-
                  <div class="row justify-content-center align-items-center">
-                    <div class="col-4 pt-3 p" style="font-size:30px;">
+                    <div class="col-4 pl-4" style="font-size:40px;">
                       <i class="fa-solid fa-chalkboard-user"></i>
                     </div>
-                    <div class="col-6 pt-3 px-3 text-center">
+                    <div class="col-8 pt-3 px-3 text-center">
                       <div class="inner">
                         <h3>150</h3>
                       </div>
+                      <h5 class="text-center pb-2">New Orders</h5>
                     </div>
                  </div>
-                    <h5 class="text-center pb-2">New Orders</h5>
+                    
                 </div>
               </div>
               <!-- ./col -->
               <div class="col-lg-3 col-6">
-                <div class="small-box bg-success col-md-2;)" style="border-radius:10px;">
+                <!-- small box -->
+                <div class="small-box bg-success" style="border-radius:10px;">
                   <div class="row justify-content-center align-items-center">
-                  <!-- small box -->
-                    <div class="col-4 pt-3 p" style="font-size:30px;">
+                    <div class="col-3 pl-4 " style="font-size:40px;">
                         <i class="fa-solid fa-chalkboard-user"></i>
                     </div>
-                    <div class="col-6 pt-3 px-3 text-center">
-                      <h4>50<sup style="font-size: 20px">%</sup></h4>
+                    <div class="col-8 pt-3 px-3 text-center">
+                      <div class="inner">
+                        <h3>50%</h3>
+                      </div>
+                      <h5 class="text-center pb-2">Bounce Rate</h5>
                     </div>
-                      <h4 class="text-center">Bounce Rate</h4>
                   </div>
                 </div>
               </div>
@@ -59,17 +61,19 @@
                 <!-- small box -->
                 <div class="small-box bg-warning" style="border-radius:10px;">
                   <div class="row justify-content-center align-items-center">
-                    <div class="col-5 pt-3 px-3" style="font-size:30px;">
+                    <div class="col-3 pl-4" style="font-size:40px;">
                         <i class="fa-solid fa-chalkboard-user"></i>
                     </div>
-                    <div class="col-6 pt-3 px-3 text-center">
-                      <h3>44</h3>
+                    <div class="col-9 pt-3 px-3 text-center">
+                      <div class="inner">
+                        <h3>44</h3>
+                      </div>
+                      <h5 class="text-center pb-2">User Registrations</h5>
                     </div>                  
-                    <h4 class="text-center">User Registrations</h4>
                   </div>
-                  <div class="icon">
+                  <!-- <div class="icon">
                     <i class="ion ion-person-add"></i>
-                  </div>
+                  </div> -->
                 </div>
               </div>
               <!-- ./col -->
@@ -77,16 +81,18 @@
                 <!-- small box -->
                 <div class="small-box bg-danger" style="border-radius:10px;">
                 <div class="row justify-content-center align-items-center">
-                  <div class="col-5 pt-3 px-3" style="font-size:30px;">
+                  <div class="col-3 pl-4" style="font-size:40px;">
                     <i class="fa-solid fa-chalkboard-user"></i>
                   </div>
-                  <div class="col-6 pt-3 px-3 text-center ">
-                    <h3>65</h3>
+                  <div class="col-9 pt-3 px-3 text-center ">
+                    <div class="inner">
+                      <h3>65</h3>
+                    </div>
+                    <h5 class="text-center pb-2">Unique Visitors</h5>
                   </div>
-                  <h5 class="text-center">Unique Visitors</h5>
-                  <div class="icon">
+                  <!-- <div class="icon">
                     <i class="ion ion-pie-graph"></i>
-                  </div>    
+                  </div>     -->
                 </div>
               </div>
               <!-- ./col -->
