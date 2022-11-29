@@ -1,6 +1,7 @@
 <?php 
     include("./includes/dbConnection.php");
     include("./functions/php/abinash_function.php");
+    include("./functions/php/abinash_database_function.php");
     // include("./includes/header.php");
     if(isset($_GET['module'])){
         $module=$_GET['module'];
@@ -14,7 +15,7 @@
             $operation='./systemAdmin/modules/'.$module.'/operation'.'/'.$module.'.php';
             $include='./systemAdmin/modules/'.$module.'/'.$module.'.php';
         }
-        include($include);
+        include($operation);
     }else{
         echo '<script>
                 alert("Page Not Found"); 
