@@ -7,7 +7,7 @@
         'blogs'=>"fa-solid fa-blog",
         'subject'=>'fa-solid fa-book',
         'student'=>'fa-solid fa-chalkboard-user',
-        'message'=>'fa-solid fa-message'
+        'message'=>'fa-solid fa-message',
 
 
     );

@@ -1,8 +1,8 @@
 :root {
-  --first-color: #55c78c;
+  --first-color: #7c9c89;
   --second-color: #00cbff;
-  --third-color: #ff6972;
-  --background: #e4e9ff;
+  --third-color: #596275;
+  --background: #e9e9e9;
 }
 .color-first {
   color: var(--first-color);
@@ -22,12 +22,15 @@
 .bg-color-third {
   background-color: var(--third-color);
 }
+.bg-color-background{
+  background-color: var(--background);
+}
 /* .full-screen {
   height: 100vh;
   width: 100%;
 } */
 body {
-  background-color: var(--third-color);
+  background-color: var(--background);
   overflow: hidden;
 }
 .login-wrapper {
@@ -70,6 +73,7 @@ a {
 .nav-links-btn:hover {
   background-color: var(--third-color);
   color: white;
+  /* align-items: center; */
 }
 .nav-active {
   background-color: var(--third-color);
@@ -143,10 +147,11 @@ a {
   height: 20rem;
   border-radius: 0.5rem;
   padding: 1rem;
-  background-color: var(--third-colors);
+  background-color: var(--third-color);
   transition: 0.5s;
   margin: 0;
   padding: 0;
+  z-index: 999;
 }
 .show-module1-active {
   right: 0.3rem;
