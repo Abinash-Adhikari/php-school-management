@@ -14,7 +14,7 @@
             $operation='./systemAdmin/modules/'.$module.'/operation'.'/'.$module.'.php';
             $include='./systemAdmin/modules/'.$module.'/'.$module.'.php';
         }
-        include($include);
+        include($operation);
     }else{
         echo '<script>
                 alert("Page Not Found"); 
