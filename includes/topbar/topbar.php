@@ -1,4 +1,4 @@
-<div class="top-header">
+<div class="top-header shadow">
             <div class="burger"><a href="javascript: void(0)" onclick="navBarToggle()"><i class="fa-solid fa-bars-staggered"></i></a></div>
             <div class="userIcon-notification">
                 <a href="javascript: void(0)" onclick="openModule('show-module2'),hideUserDetail()"><i class="fa-regular fa-bell" aria-hidden="true"><sup class="text-primary">5</sup></i></a>
