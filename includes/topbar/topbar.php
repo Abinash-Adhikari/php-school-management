@@ -1,4 +1,4 @@
-<div class="top-header shadow">
+        <div class="top-header shadow">
             <div class="burger"><a href="javascript: void(0)" onclick="navBarToggle()"><i class="fa-solid fa-bars-staggered"></i></a></div>
             <div class="userIcon-notification">
                 <a href="javascript: void(0)" onclick="openModule('show-module2'),hideUserDetail()"><i class="fa-regular fa-bell" aria-hidden="true"><sup class="text-primary">5</sup></i></a>
@@ -21,3 +21,4 @@
                 <div class="name"><h4>Abinash Adhikari</h4></div>
             </div>
         </div>
+        <div class="line"></div>
