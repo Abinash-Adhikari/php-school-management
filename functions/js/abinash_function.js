@@ -28,8 +28,12 @@ function hideAndShowByClass(val) {
   }
 }
 
-//only hide show
+// only hide show
 function hideShowSingle(val) {
   const showModel1 = document.getElementById(val);
   showModel1.classList.toggle("show-hide");
 }
+
+// function hideShowSingle(val) {
+//   $("#" + val).toggle("show-hide");
+// }
