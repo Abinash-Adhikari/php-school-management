@@ -7,7 +7,7 @@
               </div>
               <!-- /.col -->
               <div class="col-sm-3">
-                <ol class="breadcrumb float-sm-right bg-color-background">
+                <ol class="breadcrumb float-sm-right bg-color-background shadow-none">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
                   <li class="breadcrumb-item active">Subject</li>
                 </ol>
