@@ -29,15 +29,15 @@
         ?>
                 <div class="wrapper">
                     <a href="javascript:void(0)" id="active-<?php echo $index ?>" onclick="hideShowSingle('sub-nav-<?php echo $index ?>')">
-                        <div class="nav-links-btn <?php echo $module_active ?>">
+                        <div class="nav-links-btn  <?php echo $module_active ?>">
                             <div class="icons icon-toggle"> <i class="<?php echo $nav_icons[$index] ?>"></i></div>
                             <div class="nav-buttons hide-show"><?php echo $nav_menu ?></div>
                         </div>  
                     </a>
-                    <div class="show-hide" id="sub-nav-<?php echo $index ?>">
+                    <div class="" id="sub-nav-<?php echo $index ?>">
                         <?php
                             foreach($sub_nav_menus[$index] as $index1 => $data){
-                                if(isset($page) &&$index1==$page){
+                                if(isset($page) && $index1==$page){
                                     $active="nav-active";
                                 }else{
                                     $active='';
@@ -45,8 +45,7 @@
                         ?>
                         <a href="showPage.php?module=<?php echo $index ?>&page=<?php echo $index1  ?>" >
                             <div class="nav-links-btn icon-toggle <?php echo $active ?>">
-                                <div class="icons class-sub-icon"><i class="fa-solid fa-angles-right"></i></div>
-
+                                <div class=" icons class-sub-icon"><i class="fa-solid fa-turn-up" id="icon-rotate"></i></div>
                                 <div class="sub-nav-button">
                                     <?php echo $data ?>
                                 </div>

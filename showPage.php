@@ -22,23 +22,26 @@
     ?>
  
     <div class="right-part">
+        <?php
+            
+        ?>
 <?php
-    $topbar="./includes/topbar/topbar.php";
-    include($topbar);
+    // $topbar="./includes/topbar/topbar.php";
+    // include($topbar);
 
-    if (isset($folder) && !file_exists($folder)){
-        mkdir($folder, 0777);
-    }
-    if(isset($include) && !file_exists($include)){
-        touch($include);
-    }
-    if(isset($folder) && !file_exists($folder.'/operation')){
-        mkdir($folder.'/operation', 0777);
-    }
-    if(isset($operation) && !file_exists($operation)){
-        touch($operation);
-    }
-    if(isset($include)) include($include);
+    // if (isset($folder) && !file_exists($folder)){
+    //     mkdir($folder, 0777);
+    // }
+    // if(isset($include) && !file_exists($include)){
+    //     touch($include);
+    // }
+    // if(isset($folder) && !file_exists($folder.'/operation')){
+    //     mkdir($folder.'/operation', 0777);
+    // }
+    // if(isset($operation) && !file_exists($operation)){
+    //     touch($operation);
+    // }
+    // if(isset($include)) include($include);
     
     ?>
     </div>

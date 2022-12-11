@@ -3,13 +3,14 @@
         <div class="container-fluid">
             <div class="row mb-2 justify-content-between">
               <div class="col-sm-6">
-                <h2 class="m-0">Subject </h2>
+                <h4 class="m-0">Academics </h4>
               </div>
               <!-- /.col -->
               <div class="col-sm-3">
                 <ol class="breadcrumb float-sm-right bg-color-background shadow-none">
                   <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                  <li class="breadcrumb-item active">Subject</li>
+                  <li class="breadcrumb-item active">academics</li>
+                  <li class="breadcrumb-item active"> Subject</li>
                 </ol>
               </div>
               <!-- /.col -->
@@ -31,38 +32,9 @@
           <form class="form" >
             <div class="row">
               <div class=" form-group col-md-6 my-3 row">
-                <div class="col-auto">
-                  <label for="class" class="col-form-label">Class :</label>
-                </div>
-                <div class="col-md-8">
-                  <select class="form-select" id="class">
-                    <option selected>Select Class</option>
-                    <option value="1">Class One</option>
-                    <option value="2">Class Two</option>
-                    <option value="3">Class Three</option>
-                    <option value="3">Class Four</option>
-                    <option value="3">Class Five</option>
-                    <option value="3">Class Six</option>
-                    <option value="3">Class Seven</option>
-                    <option value="3">Class Eight</option>
-                    <option value="3">Class Nine</option>
-                    <option value="3">Class Ten</option>
-                  </select>
-                </div>
               </div>
               <div class="form-group col-md-6 my-3 row">
-                <div class="col-auto float-end">
-                  <label for="section" class="col-form-label">Section :</label>
-                </div>
-                <div class="col-md-8">
-                  <select class="form-select" id="section">
-                    <option selected>Select Section</option>
-                    <option value="1">Section A</option>
-                    <option value="2">Section B</option>
-                    <option value="3">Section C</option>
-                    <option value="4">Section D</option>
-                    </select>
-                </div>
+             
               </div>
               <div class="form-group my-3 row">
                 <div class="table-responsive">
@@ -85,41 +57,19 @@
                       </tbody>
                   </table>
                 </div>
-                <!-- <div class="form-group col-md-6 row">
-                  <div class="col-auto float-end">
-                    <label for="subject" class="col-form-label">Subject</label>
-                  </div>
-                  <div class="col-md-8">
-                    <input type="text" class="form-control" name="" id="subject">
-                  </div>
-                </div>
-                <div class="form-group col-md-6 row">
-                  <div class="form-group col-md-6 row">
-                    <div class="col-auto float-end">
-                      <label for="fm" class="col-form-label">F.M</label>
-                    </div>
-                    <div class="col-md-8">
-                      <input type="text" class="form-control" name="" id="fm">
-                    </div>
-                  </div>
-                  <div class="form-group col-md-6 row">
-                    <div class="col-auto float-end">
-                      <label for="pm" class="col-form-label">P.M</label>
-                    </div>
-                    <div class="col-md-8">
-                      <input type="text" class="form-control" name="" id="pm">
-                    </div>
-                  </div>
-                </div> -->
               </div>
               <div class="plus-btn">
-                <button class="btn-success btn-sm" type="button" onclick="addNewRow('add-subject')"> <i class="fa fa-plus" aria-hidden="true"></i></button>
+                <button class="btn-success btn-sm " type="button" onclick="addNewRow('add-subject')"> <i class="fa fa-plus" aria-hidden="true"></i></button>
               </div>
-              <div class="form-group col-md-12 mt-4 text-end">
-                <!-- <hr> -->
-                  <button type="submit" class="btn btn-success">Save </button>
 
-                      <button type="button" class="btn  btn-danger" onclick="Javascript: hideShowSingle('add-subject-cart')">Close </button>
+
+              <div class="form-group col-md-12 mt-4 d-flex justify-content-end">
+                <!-- <hr> -->
+                <div class="button">
+                    <button type="submit" class="btn btn-success ">Save </button>
+                    <button type="button" class="btn  btn-danger float-end" onclick="Javascript: hideShowSingle('add-subject-cart')">Close </button>
+                </div>
+
               </div>
             </div>
           </form>
@@ -146,7 +96,7 @@
                 <th>SNO.</th>
                 <th>Class</th>
                 <th>Subject</th>
-                <th >Subject</th>
+                <th >Action</th>
               </tr>
             </thead>
 

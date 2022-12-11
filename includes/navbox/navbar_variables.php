@@ -1,31 +1,39 @@
 <?php
     $nav_icons = array(
-        'dashboard' => 'fa fa-house',
-        'teacher' => 'fa-solid fa-chalkboard-user',
-        'office' => 'fa-solid fa-briefcase',
+        'dashboards' => 'fa fa-house',
+        'teachers' => 'fa-solid fa-chalkboard-user',
+        'offices' => 'fa-solid fa-briefcase',
         'cms'=>'fa-solid fa-gear',
         'blogs'=>"fa-solid fa-blog",
-        'subject'=>'fa-solid fa-book',
-        'student'=>'fa-solid fa-chalkboard-user',
-        'message'=>'fa-solid fa-message',
+        'academics'=>'fa-solid fa-book',
+        'students'=>'fa-solid fa-chalkboard-user',
+        'messages'=>'fa-solid fa-message',
 
 
     );
     
     $nav_Menus = array(
-        'dashboard' => 'Dashboard', 
-        'teacher'=> 'Teacher',
-        'office'=> 'Office',
+        'dashboards' => 'Dashboard', 
+        'teachers'=> 'Teacher',
+        'offices'=> 'Office',
         'cms'=> 'CMS',
         'blogs'=> 'Blogs',
-        'subject'=>'Subject',
-        'student'=>'Student',
-        'message'=>'Message'
+        'academics'=>'Academic',
+        'students'=>'Student',
+        'messages'=>'Message'
          
     );
 
-    $sub_nav_menus['teacher'] = array(
-        'about'=>'About',
-        'fact'=>'Fact',
+    $sub_nav_menus['teachers'] = array(
+        'abouts'=>'About',
+        'facts'=>'Fact',
+        'skills'=>'Skill',
+        'resume'=>'Resume',
+        'subject'=>'Subject',
+    );
+    $sub_nav_menus['academics'] = array(
+        'sections'=>'Section',
+        'subjects'=>'Subject',
+        'classes'=>'Class',
     )
 ?>
