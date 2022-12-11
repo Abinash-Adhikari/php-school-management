@@ -1,11 +1,15 @@
 :root {
   --first-color: #7c9c89;
-  --second-color: #00cbff;
+  --second-color: #d7edf2;
   --third-color: #596275;
   --background: #e9e9e9;
+  --text-color: #ffffff;
 }
 .color-first {
   color: var(--first-color);
+}
+.color-text{
+  color: var(--text-color)
 }
 .color-second {
   color: var(--second-color);
@@ -40,13 +44,18 @@ body {
   justify-content: center;
   align-items: center;
 }
+.wrapper a{
+  /* display: flex; */
+  text-align: center;
+  width: 100%;
+}
 .login-page {
-  /* width: 20rem ; */
   border-radius: 5px;
 }
-/* .btn-full {
-  width: 100%;
-} */
+.nav-header{
+  border: 1px solid black;
+  padding-bottom: 8px;
+}
 
 a {
   text-decoration: none;
@@ -55,31 +64,52 @@ a {
 .left-part {
   height: 100vh;
   width: 15%;
+  overflow-x: hidden;
 }
 .bg-sec {
-  background-color: #cccc;
+  background-color: var(--background);
 }
 .nav-links-btn {
   display: flex;
   gap: 1rem;
-  width: 100%;
   align-items: center;
   padding: 0.7rem;
-  color: white;
-  border: 1px solid white;
-  border-right: none;
-  border-left: none;
-}
+  color: var(--text-color);
+  border: 1px solid var(--text-color);
+  padding-left: 2rem;
+  /* text-align: center; */
+  /* border-right: none;
+  border-left: none;*/
+  margin:0 .5rem .5rem .5rem;
+} 
 .nav-links-btn:hover {
   background-color: var(--third-color);
-  color: white;
+  color: var(--text-color);
   /* align-items: center; */
 }
+
 .nav-active {
   background-color: var(--third-color);
-  color: white;
+  color: var(--text-color);
 }
-/* .a-btn:hover {
+.sub-nav-active {
+  background-color: var(--second-color);
+  color: var(--text-color);
+  /* margin-left: 0.5rem; */
+}
+#icon-rotate{
+  /* padding-right: 1rem; */
+  /* padding-top: 1rem; */
+  transform: rotate(90deg);
+}
+.sub_nav_menus{
+  background-color: var(--first-color);
+  color: var(--text-color);
+  display: block;
+  z-index: 1;
+}
+/* :active
+.a-btn:hover {
   background-color: var(--third-color);
 } */
 .a-btn {
@@ -92,7 +122,7 @@ a {
 }
 .top-header {
   height: 3.5rem;
-  background-color: white;
+  background-color: var(--text-color);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -209,3 +239,4 @@ a {
   top: 0;
   background-color: var(--third-color);
 }
+
